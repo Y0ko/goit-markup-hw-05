@@ -79,6 +79,9 @@ body {
 .logo a:hover,
 .logo a:focus {
   color: var(--button-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform;
 }
 .nav a {
   color: var(--title-text-color);
@@ -86,6 +89,9 @@ body {
 .nav a:hover,
 .nav a:focus {
   color: var(--button-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform;
 }
 .header {
   border: 1px solid #ececec;
@@ -130,9 +136,20 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  position: relative;
 }
 .nav-item:not(:last-child) {
   margin-right: 50px;
+}
+.nav-link:active::after {
+  content: '';
+  width: 100%;
+  height: 4px;
+  background-color: var(--Web-span-text);
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  border-radius: 2px;
 }
 
 .contacts {
@@ -155,6 +172,9 @@ body {
 .contact-link:hover,
 .contact-link:focus {
   fill: currentColor;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform;
 }
 .contacts-link-icon {
   margin-right: 10px;
@@ -198,6 +218,9 @@ body {
 .buttons:focus {
   background-color: #188ce8;
   color: var(--text-white-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform;
 }
 
 /*----------НАШИ ПРЕИМУЩЕСТВА---------*/
@@ -254,6 +277,7 @@ body {
 .caption-item {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 .caption-item li:not(:last-child) {
   margin-right: 30px;
@@ -263,6 +287,14 @@ body {
   width: 370px;
   height: 294px;
 }
+/*.caption-image {
+  border-color: #18a0fb;
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  color: #188ce8;
+}
+*/
 /*-------КОМАНДА-------------*/
 .team {
   background-color: #f5f4fa;
@@ -344,6 +376,9 @@ body {
 .master-social-link:focus {
   background-color: var(--Web-span-text);
   color: #ffffff;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform;
 }
 
 /*----Clients----*/
@@ -395,6 +430,9 @@ body {
 .client-social-link:focus {
   color: var(--Web-span-text);
   border: 1px solid var(--Web-span-text);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform;
 }
 
 /*------------PORTFOLIO-------------*/
@@ -426,6 +464,9 @@ body {
   cursor: pointer;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform;
 }
 /*-------section2------*/
 .cards {
@@ -448,6 +489,9 @@ body {
 .card:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform;
 }
 .card-item {
   font-weight: 700;
@@ -495,6 +539,9 @@ body {
 .link:focus,
 .link:hover {
   color: var(--button-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform;
 }
 .footer li {
   font-size: 14px;
@@ -510,6 +557,9 @@ body {
 .footer-link:hover,
 .footer-link:focus {
   color: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform;
 }
 
 .footer-connect-title {
@@ -553,6 +603,9 @@ body {
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: var(--Web-span-text);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform;
 }
 
 .footer-container {
