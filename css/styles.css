@@ -287,14 +287,30 @@ body {
   width: 370px;
   height: 294px;
 }
-/*.caption-image {
-  border-color: #18a0fb;
-  position: absolute;
-  width: 100%;
-  height: 70px;
-  color: #188ce8;
+.caption-image {
+  position: relative;
+
+  overflow: hidden;
 }
-*/
+.caption-image > .thumb {
+  position: absolute;
+  display: flex;
+  justify-self: center;
+  bottom: 0;
+  left: 0;
+  width: 360px;
+  height: 70px;
+  padding: 27px 75px;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
 /*-------КОМАНДА-------------*/
 .team {
   background-color: #f5f4fa;
