@@ -293,7 +293,6 @@ body {
 }
 .caption-image {
   position: relative;
-
   overflow: hidden;
 }
 .caption-image > .thumb {
@@ -682,6 +681,7 @@ body {
   transform: scale(0.2) rotate(0) translate(-999px);
   transform: translate(-50%, -50%);
   transition: transform 2000ms;
+  padding: 40px;
 }
 .modal-close {
   width: 30px;
@@ -700,4 +700,17 @@ body {
   visibility: inherit;
   opacity: 0;
   pointer-events: none;
+}
+
+.modal-title-text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.modal_form {
+  width: 100%;
+  align-items: center;
 }
